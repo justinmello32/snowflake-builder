@@ -21,15 +21,15 @@ The  Game:  Use a computer code and adjust random parameters to generate images 
 
  
 
-Here is what you should do to get started:
+#Here is what you should do to get started:
 
  
 
-0. Read a few short articles on the formation of snowflakes in nature.
+Read a few short articles on the formation of snowflakes in nature.
 
  
 
-1.  Install the PROCESSING API from     https://processing.org/download/
+Install the PROCESSING API from     https://processing.org/download/
 
  
 
@@ -37,7 +37,7 @@ That will give you ability to execute processing in both Java and javascript.  J
 
  
 
-2.  Go to this URL    https://www.openprocessing.org/sketch/492405  in openprocessing.org
+Go to this URL    https://www.openprocessing.org/sketch/492405  in openprocessing.org
 
  
 
@@ -51,12 +51,12 @@ Study the code and learn what each option does.
 
  
 
-3.  Find and study other codes for generating snowflake images
+Find and study other codes for generating snowflake images
 
  
 
-4,  Find at least 10 quality images of real snowflakes.to act as target images in the game.
+Find at least 10 quality images of real snowflakes.to act as target images in the game.
 
  
 
-5.  Modify the JS code in step 2 to have an option to draw just one arm of the snowflake and then render all six arms of the snowflake with the same random set.
+Modify the JS code in step 2 to have an option to draw just one arm of the snowflake and then render all six arms of the snowflake with the same random set.
