@@ -13,15 +13,7 @@ We also do this a lot to make computer-generated images resemble  shapes, motion
 
 The  Game:  Use a computer code and adjust random parameters to generate images that look like real snowflakes in nature.
 
- 
-
- 
-
---------------
-
- 
-
-#Here is what you should do to get started:
+# Here is what you should do to get started:
 
  
 
