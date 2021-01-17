@@ -15,9 +15,12 @@ let thicknesFactor = 0.005; //if the stroke thicknes is dependent on the lenght 
 let strokeAlpha = 25; //alpha of the lines
 
 //menu
-let showMenu = true;
+let showMenu = false;
+let showHelpText = true;
 
 let parentDiv;
+let helpTextDiv;
+let helpText;
 let radiusSlider;
 let angleVarianzSlider;
 let endLengthInput;
@@ -41,6 +44,13 @@ function setup() {
 function generateMenu() {
 	parentDiv = createDiv('');
 	parentDiv.style('color', 'white');
+
+	helpTextDiv = createDiv('');
+	helpTextDiv.style('color', 'white');
+
+	helpText = createP('Press M to Show Menu Options');
+	helpText.parent(helpTextDiv);
+
 
 	radiusSliderP = createP('Radius ');
     radiusSliderP.parent(parentDiv);
@@ -75,12 +85,17 @@ function generateMenu() {
     thicknessLengthSlider = createSlider(0, 0.1, 0.05, 0.001);
     thicknessLengthSlider.parent(thicknessLengthSliderP);
 
+    hideMenuText = createP('Press M to Hide Menu');
+    hideMenuText.parent(parentDiv);
+
     generateButton = createButton('Generate');
     generateButton.mousePressed(generateSnowflake);
     generateButton.parent(parentDiv);
 
     parentDiv.position(10, 0);
     parentDiv.hide();
+
+    helpTextDiv.position(10,0);
 }
 
 function keyReleased() {
@@ -92,6 +107,8 @@ function keyReleased() {
         case 'M':
             showMenu = !showMenu;
             showMenu ? parentDiv.show() : parentDiv.hide();
+            showHelpText = !showHelpText;
+            showHelpText ? helpTextDiv.show() : helpTextDiv.hide();
             break;
     }
 }
@@ -114,7 +131,7 @@ function generateSnowflake()  {
     }
 }
 
-function generateBranch() {
+function generateBranch(origin, length, angle) {
 	if (length < endLength) {
         return;
     }
